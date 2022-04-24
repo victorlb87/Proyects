@@ -1,0 +1,80 @@
+/*MAIN*/
+
+
+body {
+    background: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 5%;
+    padding: 0;
+    max-width: 90%;
+    
+    font-size: 100%;
+    line-height: 1.4em;
+    min-height: 100vh;
+    hyphens: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+.holausuario {
+    font-size: 100%;
+}
+
+.contenedor  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 120em; 
+    padding:1em;
+    /* background-color: rgb(248, 245, 245); */
+}
+
+.contenedor .tabs{
+    width:90%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.contenedor .tab{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 1em;
+    margin:0 2em 0 0;
+    border-radius: 2em;
+    transition: all .5s ease;
+}
+
+.contenedor .tab.activo{
+    background-color: rgb(170, 26, 38);
+    color:white;
+    border-radius: 2em;
+}
+
+/* segundo contenedor */
+
+.contenedor .fun {
+    display: none;
+    margin:1em;
+    padding: 1em;
+    top:2em;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.contenedor .fun.activo {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    width: 90%;
+}
+
+.fun .almacen button{
+    width: 30%;
+    margin: 0 0 0 5%;    
+}
+
